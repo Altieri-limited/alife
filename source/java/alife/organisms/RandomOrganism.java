@@ -34,7 +34,7 @@ public class RandomOrganism implements Organism<BasicOutcome> {
 	}
 	
 	@Override
-	public void updateStrenght(int payoff) {
+	public void updateStrength(int payoff) {
 		strength += payoff;
 	}
 	

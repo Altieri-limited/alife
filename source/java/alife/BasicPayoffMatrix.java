@@ -12,22 +12,22 @@ public class BasicPayoffMatrix implements Payoff<BasicOutcome> {
 		
 		if (outcome1 == BasicOutcome.COOPERATE) {
 			if (outcome2 == BasicOutcome.COOPERATE) {
-				org1.updateStrenght(cooperateBonus);
-				org2.updateStrenght(cooperateBonus);
+				org1.updateStrength(cooperateBonus);
+				org2.updateStrength(cooperateBonus);
 			}
 			else {
-				org1.updateStrenght(suckPenalty);
-				org2.updateStrenght(defectBonus);
+				org1.updateStrength(suckPenalty);
+				org2.updateStrength(defectBonus);
 			}
 		}
 		else {
 			if (outcome2 == BasicOutcome.COOPERATE) {
-				org1.updateStrenght(defectBonus);
-				org2.updateStrenght(suckPenalty);
+				org1.updateStrength(defectBonus);
+				org2.updateStrength(suckPenalty);
 			}
 			else {
-				org1.updateStrenght(defectPenalty);
-				org2.updateStrenght(defectPenalty);
+				org1.updateStrength(defectPenalty);
+				org2.updateStrength(defectPenalty);
 			}
 		}
 	}
