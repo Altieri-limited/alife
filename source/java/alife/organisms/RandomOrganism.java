@@ -23,6 +23,7 @@ public class RandomOrganism implements Organism<BasicOutcome> {
 		return outcome;
 	}
 
+
 	@Override
 	public Point getPoint() {
 		return point;
@@ -32,7 +33,12 @@ public class RandomOrganism implements Organism<BasicOutcome> {
 	public int getStrength() {
 		return strength;
 	}
-	
+
+	@Override
+	public void react(Organism<BasicOutcome> other, BasicOutcome itsOutcome) {
+		/* No reaction */
+	}
+
 	@Override
 	public void updateStrenght(int payoff) {
 		strength += payoff;

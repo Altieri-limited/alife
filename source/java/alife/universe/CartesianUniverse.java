@@ -1,6 +1,7 @@
 package alife.universe;
 
 import alife.exceptions.ConfigurationException;
+import com.google.common.collect.*;
 
 public class CartesianUniverse implements Universe{
 	private int[] sizes;
