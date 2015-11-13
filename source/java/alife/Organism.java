@@ -7,5 +7,5 @@ public interface Organism<Outcome> extends PointOwner {
 	Point getPoint();
 	int getStrength();
 	void react(Organism<Outcome> other, Outcome itsOutcome);
-	void updateStrenght(int payoff);
+	void updateStrength(int payoff);
 }
